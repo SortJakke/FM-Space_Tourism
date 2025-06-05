@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/output.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <script type="module" src="../scripts/script.js" defer></script>
+  </head>
+  <body class="body-crew">
+    <header class="header">
+      <a class="header__logo" href="../index.html">
+        <img src="../assets/shared/logo.svg" alt="Space Tourism Logo" />
+      </a>
+      <button class="header__nav-open" type="button">
+        <img src="../assets/shared/icon-hamburger.svg" alt="menu icon" />
+      </button>
+      <nav class="header__nav">
+        <button class="header__nav-close" type="button">
+          <img src="../assets/shared/icon-close.svg" alt="close icon" />
+        </button>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="../index.html" class="header__nav-link"
+              ><span class="link-number">00</span> Home</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="./destinations.html" class="header__nav-link"
+              ><span class="link-number">01</span> Destination</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link header__nav-link--active"
+              ><span class="link-number">02</span> Crew</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="./technology.html" class="header__nav-link"
+              ><span class="link-number">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="crew">
+      <section class="crew__container">
+        <h1 class="crew__section-title">
+          <span class="crew__section-title--span">02</span> Meet your crew
+        </h1>
+        <div class="crew__content">
+          <div class="crew__info">
+            <h2 class="crew__title">
+              <span class="crew__title-span" id="crew__role">Commander</span>
+              <span class="crew__title-name" id="crew__name"
+                >Douglas Hurley
+              </span>
+            </h2>
+            <p class="crew__description" id="crew__description">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps
+              pilot and former NASA astronaut. He launched into space for the
+              third time as commander of Crew Dragon Demo-2.
+            </p>
+            <ul class="crew__nav">
+              <li class="crew__nav-item">
+                <button
+                  type="button"
+                  class="crew__nav-btn crew__nav-btn--active"
+                  data-destination="Hurley"
+                  aria-label="Hurley"
+                ></button>
+              </li>
+              <li class="crew__nav-item">
+                <button
+                  type="button"
+                  class="crew__nav-btn"
+                  data-destination="Shuttleworth"
+                  aria-label="Shuttleworth"
+                ></button>
+              </li>
+              <li class="crew__nav-item">
+                <button
+                  type="button"
+                  class="crew__nav-btn"
+                  data-destination="Glover"
+                  aria-label="Glover"
+                ></button>
+              </li>
+              <li class="crew__nav-item">
+                <button
+                  type="button"
+                  class="crew__nav-btn"
+                  data-destination="Ansari"
+                  aria-label="Ansari"
+                ></button>
+              </li>
+            </ul>
+          </div>
+          <figure class="crew__figure">
+            <img
+              src="../assets/crew/image-douglas-hurley.png"
+              alt="Douglas Hurley"
+              class="crew__image"
+              id="crew__image"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/output.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <script type="module" src="../scripts/script.js" defer></script>
+  </head>
+  <body class="body-destinations">
+    <header class="header">
+      <a class="header__logo" href="../index.html">
+        <img src="../assets/shared/logo.svg" alt="Space Tourism Logo" />
+      </a>
+      <button class="header__nav-open" type="button">
+        <img src="../assets/shared/icon-hamburger.svg" alt="menu icon" />
+      </button>
+      <nav class="header__nav">
+        <button class="header__nav-close" type="button">
+          <img src="../assets/shared/icon-close.svg" alt="close icon" />
+        </button>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="../index.html" class="header__nav-link"
+              ><span class="link-number">00</span> Home</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link header__nav-link--active"
+              ><span class="link-number">01</span> Destination</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="./crew.html" class="header__nav-link"
+              ><span class="link-number">02</span> Crew</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="./technology.html" class="header__nav-link"
+              ><span class="link-number">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="destinations">
+      <section class="destinations__container">
+        <h1 class="destinations__title">
+          <span class="destinations__title-span">01</span> Pick your destination
+        </h1>
+        <div class="destinations__content">
+          <figure class="destinations__figure">
+            <img
+              src="../assets/destination/image-moon.png"
+              alt="Moon"
+              class="destinations__image"
+              id="destinations__image"
+            />
+          </figure>
+          <div class="destinations__info">
+            <ul class="destinations__nav">
+              <li class="destinations__nav-item">
+                <button
+                  type="button"
+                  class="destinations__nav-link destinations__nav-link--active"
+                  data-destination="moon"
+                >
+                  Moon
+                </button>
+              </li>
+              <li class="destinations__nav-item">
+                <button
+                  type="button"
+                  class="destinations__nav-link"
+                  data-destination="mars"
+                >
+                  Mars
+                </button>
+              </li>
+              <li class="destinations__nav-item">
+                <button
+                  type="button"
+                  class="destinations__nav-link"
+                  data-destination="europa"
+                >
+                  Europa
+                </button>
+              </li>
+              <li class="destinations__nav-item">
+                <button
+                  type="button"
+                  class="destinations__nav-link"
+                  data-destination="titan"
+                >
+                  Titan
+                </button>
+              </li>
+            </ul>
+            <h2 class="destinations__name" id="destinations__name">Moon</h2>
+            <p class="destinations__description" id="destinations__description">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <div class="destinations__statistics">
+              <div class="destinations__details">
+                <span class="details-label">Avg. distance</span>
+                <span class="details-value" id="destinations__distance"
+                  >384,400 km</span
+                >
+              </div>
+              <div class="destinations__details">
+                <span class="details-label">Est. travel time</span>
+                <span class="details-value" id="destinations__travel-time"
+                  >3 days</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

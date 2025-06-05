@@ -1,0 +1,44 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: $Blue-300;
+  background-color: $Blue-900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $Font-Primary;
+  font-weight: normal;
+  color: $White;
+}
+
+p {
+  font-family: $Font-Secondary;
+  color: $Blue-300;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+}
+
+@import "header";
+@import "home";
+@import "destinations";
+@import "crew";
+@import "technology";

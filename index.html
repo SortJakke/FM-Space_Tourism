@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <script type="module" src="./scripts/script.js" defer></script>
+  </head>
+  <body class="body-home">
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="./assets/shared/logo.svg" alt="Space Tourism Logo" />
+      </a>
+      <button class="header__nav-open" type="button">
+        <img src="./assets/shared/icon-hamburger.svg" alt="menu icon" />
+      </button>
+      <nav class="header__nav">
+        <button class="header__nav-close" type="button">
+          <img src="./assets/shared/icon-close.svg" alt="close icon" />
+        </button>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link header__nav-link--active"
+              ><span class="link-number">00</span> Home</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="./pages/destinations.html" class="header__nav-link"
+              ><span class="link-number">01</span> Destination</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="./pages/crew.html" class="header__nav-link"
+              ><span class="link-number">02</span> Crew</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="./pages/technology.html" class="header__nav-link"
+              ><span class="link-number">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="home">
+      <section class="home__content">
+        <div class="home__text">
+          <h1 class="home__text-title">
+            So, you want to travel to <span class="home__text-span">Space</span>
+          </h1>
+          <p class="home__text-description">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div class="home__explore">
+          <a
+            href="./pages/destinations.html"
+            class="home__explore-button"
+            role="button"
+          >
+            <span class="home__explore-button-text"> Explore </span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
